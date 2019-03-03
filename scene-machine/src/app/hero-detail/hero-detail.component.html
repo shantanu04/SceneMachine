@@ -1,0 +1,13 @@
+<div *ngIf="scene">
+  <div class="container">
+    <h3>Scene details</h3>
+    <div>
+      <span>Scene id: </span>{{scene.idScene}}
+    </div>
+    <div>
+      <img src={{scene.vignette}} alt="image" class="rcorners" />
+      <h4>{{scene.title | uppercase}}</h4>
+    </div>
+    <button (click)="goBack()">Go back</button>
+  </div>
+</div>
